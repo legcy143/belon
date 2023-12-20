@@ -2,8 +2,8 @@ import React from 'react'
 
 const WhyUs = () => {
     return (
-        <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto">
+        <section className="text-gray-600 body-font my-10">
+            <div className="container p-3 mx-auto">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-5 text-gray-900 text-center">
                     Why choose Belon ??
                 </h1>
@@ -23,7 +23,7 @@ export default WhyUs
 
 const WhyUsComponent = (props: any) => {
     return (
-        <div className="border border-gray-200 rounded-lg p-5 flex-1 self-stretch">
+        <div className="border border-gray-200 rounded-lg p-3 flex-1 self-stretch flex flex-col min-w-[12rem] sm:min-w-[16rem] max-w-[30rem]">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                 <svg
                     fill="none"

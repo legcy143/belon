@@ -1,16 +1,20 @@
 import React from 'react'
 
 export default function OurProducts() {
-  return (
-    <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-5 text-gray-900 text-center">
+    return (
+        <section className="text-gray-600 body-font">
+            <div className="container p-3 mx-auto">
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-5 text-gray-900 text-center capitalize">
                     our products
                 </h1>
                 <div className="flex items-center justify-center gap-3 flex-wrap">
-                    <ProductComponent heading="Quality Assurance" description=" Our rigorous quality control measures guarantee a product that meets internaƟonal standards, making BELON Banshlochan a symbol of reliability." />
-                    <ProductComponent heading="Bulk Supply" description=" Whether you're a retailer, distributor, or a wellness brand, BELON is your trusted partner for bulk Banshlochan supply. We cater to your needs with efficiency and consistency. " />
-                    <ProductComponent heading="Global Export" description="Elevate your market presence internaƟonally with BELON. We facilitate the export of Banshlochan to various regions, ensuring that the world experiences the profound benefits of this herbal marvel. " />
+                    <ProductComponent heading="ClayQuit" description="Transform your life with ClayQuit - our revolutionary product craŌed to help you leave the habit of eating clay. Embrace a healthier lifestyle with confidence." />
+
+                    <ProductComponent heading="Nuts NutriƟon" description="Discover the goodness of Nuts NutriƟon, a range that combines taste and health. Nutrient-rich snacks to fuel your daily adventures. " />
+
+                    <ProductComponent heading="Chumantar Digestive Churan" description="Chumantar Unleash the power of Chumantar Digestive Churan for digestive wellness. A tradiƟonal remedy for modern living. " />
+
+                    <ProductComponent heading="Belon Adult Diaper" description="Providing comfort and care, Belon Adult Diaper ensures dignity and ease for individuals with unique needs. " />
                 </div>
             </div>
         </section>
@@ -21,15 +25,15 @@ export default function OurProducts() {
 
 const ProductComponent = (props: any) => {
     return (
-        <div className="border border-gray-200 rounded-lg p-5 flex-1 self-stretch">
-          
+        <div className="border border-gray-200 rounded-lg p-3 flex-1 self-stretch flex flex-col min-w-[14rem] sm:min-w-[18rem] max-w-[30rem]">
+            <img className='w-full aspect-video object-cover rounded-md mb-3' src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3BmLXMxMDgtcG0tNDExMy1tb2NrdXAuanBn.jpg" alt="img" />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
                 {props.heading}
             </h2>
-            <p className="leading-relaxed text-base">
+            <p className="leading-relaxed text-base flex-1">
                 {props.description}
             </p>
-            
+            <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Read More</button>
         </div>
     )
 }

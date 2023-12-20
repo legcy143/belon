@@ -19,7 +19,9 @@ export default function TopNavbar() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary mb-3">
             <Container fluid>
-                <Navbar.Brand href="/">Belon</Navbar.Brand>
+                <Navbar.Brand href="/">
+                    Belon
+                    </Navbar.Brand>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} onClick={toggleOffcanvas} />
                 <Navbar.Offcanvas
                     show={expand}
@@ -29,7 +31,8 @@ export default function TopNavbar() {
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
-                            Offcanvas
+                        <Button onClick={()=>{toggleOffcanvas()}}>X</Button>
+                            Belon
                         </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
